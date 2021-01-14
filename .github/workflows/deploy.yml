@@ -19,7 +19,7 @@ jobs:
       with:
         host: ${{ secrets.PRD_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
+        password: ${{ secrets.SSH_KEY }}
         port: 22
         script: |
           cd ~/projects/fast-chat
