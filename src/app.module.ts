@@ -9,6 +9,7 @@ import { AppService } from './app.service';
 import { CommandsModule } from './commands/commands.module';
 import { ChatsModule } from './chats/chats.module';
 import { RoomsModule } from './rooms/rooms.module';
+import { EventsModule } from './events/events.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { RoomsModule } from './rooms/rooms.module';
         rootPath: join(__dirname, '..', 'client'),
       }),
       CommandsModule,
+      EventsModule,
       ChatsModule,
       RoomsModule,
   ],
