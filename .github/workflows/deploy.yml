@@ -14,9 +14,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Echo
-      run: |
-        echo ${{ secrets.TEST }}
     - name: Deploy
       uses: appleboy/ssh-action@master
       with:
